@@ -2,6 +2,6 @@
 # _*_ coding=utf-8 _*_
 # python basic scripts
 
-
-print('hello world!')
-print('hello python!')
+str = 'haier'
+for c in str:
+    print(c,end=' ')
