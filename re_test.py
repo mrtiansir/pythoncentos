@@ -47,14 +47,20 @@ str3 = os.popen('ifconfig' + ' ens160').read()     #获取对应网卡ifconfig�
 
 str3_result = re.findall('([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})', str3)
 str3_mac = re.findall('([0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2})', str3)
-ip_addr = f'{"IP地址":<15s}: {str3_result[0]:<30s}'
-netmask = f'{"子网掩码":<13s}: {str3_result[1]:<30s}'
-network = f'{"网络号":<14s}: {str3_result[2]:<30s}'
-mac = f'{"MAC地址":<15s}: {str3_mac[0]:<30s}'
-print(ip_addr)
-print(mac)
-print(netmask)
-print(network)
+
+for i in str3_result:
+    if i.split('.')[-1] == '0':
+        netmask = i
+    elif i.split('.')[-1] == '255':
+        network = i
+    else:
+        ip_addr = i
+
+print(f'{"IP地址":<15s}: {ip_addr:<30s}')
+print(f'{"MAC地址":<15s}: {str3_mac[0]:<30s}')
+print(f'{"子网掩码":<13s}: {netmask:<30s}')
+print(f'{"网络号":<14s}: {network:<30s}')
+
 
 
 
