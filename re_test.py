@@ -12,6 +12,8 @@ Vlan150              10.159.195.2    protocol-up/link-up/admin-up
 *  500     0ec9.2e8c.d621   dynamic  0         F      F    Eth1/24
 '''
 import re
+import os
+
 
 str1 = 'Vlan150              10.159.195.2    protocol-up/link-up/admin-up'
 str2 = '*  500     0ec9.2e8c.d621   dynamic  0         F      F    Eth1/24'
@@ -41,24 +43,21 @@ print(interface)
 print('-'*80)
 
 
-str3 = '''
-ens160: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 10.159.202.219  netmask 255.255.255.0  broadcast 10.159.202.255
-        inet6 fe80::95f0:65d3:4b1a:9a67  prefixlen 64  scopeid 0x20<link>
-        ether 00:50:56:b2:56:84  txqueuelen 1000  (Ethernet)
-        RX packets 26322441  bytes 5641045270 (5.2 GiB)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 631173  bytes 92429652 (88.1 MiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-'''
+str3 = os.popen('ifconfig' + ' ens160').read()     #获取对应网卡ifconfig输出信息
 
 str3_result = re.findall('([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})', str3)
+str3_mac = re.findall('([0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2}:[0-9a-f]{2})', str3)
 ip_addr = f'{"IP地址":<15s}: {str3_result[0]:<30s}'
 netmask = f'{"子网掩码":<13s}: {str3_result[1]:<30s}'
 network = f'{"网络号":<14s}: {str3_result[2]:<30s}'
+mac = f'{"MAC地址":<15s}: {str3_mac[0]:<30s}'
 print(ip_addr)
+print(mac)
 print(netmask)
 print(network)
+
+
+
 
 
 
