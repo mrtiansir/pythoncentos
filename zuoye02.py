@@ -2,7 +2,7 @@
 # _*_ coding=utf-8 _*_
 # python basic scripts
 #列表与字典课后作业
-
+#作业链接：https://gitee.com/qytanggit/Python_Basic/blob/master/Charpter5_Python%E5%86%85%E7%BD%AE%E7%B1%BB%E5%9E%8B_%E5%88%97%E8%A1%A8%E4%B8%8E%E5%AD%97%E5%85%B8/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A.md
 #第1题
 '''在列表中添加元素
 现在有个马戏团想要创建一个程序来记录自己的表演和工作日程，用列表来实现。
