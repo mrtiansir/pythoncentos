@@ -72,7 +72,7 @@ for x in list1:
 
 for key,value in dict1.items():
     print('='*50)
-    print(f'{"接口":>10s} : {key:<20s}')
-    print(f'{"IP地址":>10s} : {value[0]:<20s}')
+    print(f'{"接口":>12s} : {key:<20s}')
+    print(f'{"IP地址":>12s} : {value[0]:<20s}')
     print(f'{"接口状态":>10s} : {value[1]:<20s}')
 
