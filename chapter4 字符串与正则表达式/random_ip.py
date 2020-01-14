@@ -14,4 +14,3 @@ ip = str(a) + '.' + str(b) + '.' + str(c) + '.' + str(d)
 print(ip)
 
 
-
