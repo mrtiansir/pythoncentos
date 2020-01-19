@@ -23,14 +23,14 @@ def ssh_client(ip, username, password, port, cmd):
 if __name__ == '__main__':
     from argparse import ArgumentParser
 
-    usage = 'usag:python simple_ssh_client.py -i ipaddr -u username -p password -o port -c command'
+    usage = '/usr/bin/python3 simple_ssh_client.py -i ipaddr -u username -p password -o port -c command'
 
     parser = ArgumentParser(usage=usage)
 
     parser.add_argument('-i', '--ipaddr', dest='ip', help='SSH Server', default='10.159.202.254', type=str)
     parser.add_argument('-u', '--username', dest='username', help='SSH Username', default='root', type=str)
-    parser.add_argument('-p', '--password', dest='password', help='SSH Password', type=str)
-    parser.add_argument('-o', '--port', dest='port', help='SSH Port', type=str)
+    parser.add_argument('-p', '--password', dest='password', help='SSH Password', default='cisco.123,elk', type=str)
+    parser.add_argument('-o', '--port', dest='port', help='SSH Port', default='22', type=str)
     parser.add_argument('-c', '--command', dest='cmd', help='Shell Command', default='ls', type=str)
 
     args = parser.parse_args()
