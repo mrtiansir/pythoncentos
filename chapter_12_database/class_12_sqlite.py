@@ -24,7 +24,7 @@ for teacher in teachers_list:
     age = teacher['年龄']
     department = teacher['部门']
     course = teacher['学科']
-    cursor.execute(f"insert into teachers_info values ('{name}', {age}, '{department}', '{course}')")
+    cursor.execute(f"insert into teachers_info values ('{name}', {age}, '{department}', '{course}')")   #格式化字符串形成sql语句，字符串内容加''，数字不加
 
 
 cursor.execute("select * from teachers_info")

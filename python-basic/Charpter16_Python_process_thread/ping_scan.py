@@ -6,7 +6,7 @@
 # 教主技术进化论拓展你的技术新边疆
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
-from scapy_ping_one_new import scapy_ping_one
+
 from multiprocessing.pool import ThreadPool
 import ipaddress
 
