@@ -1,0 +1,17 @@
+{# 加载js文件 #}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<script src="/static/chart_json_functions.js"></script>
+
+{# 图表会被放入此canvas #}
+<canvas id="chart"></canvas>
+
+{# 本页为"chart.js 刷新页面(不推荐)"最终数据刷新页面 #}
+{# 根据返回的内容绘制图表 #}
+<script type="text/javascript" language="javascript">
+    chart_line("chart",
+               "CPU利用率",
+               JSON.parse('{{ labels | safe }}'),
+               JSON.parse('{{ datas | safe }}'),
+               JSON.parse('{{ colors | safe }}'))
+</script>

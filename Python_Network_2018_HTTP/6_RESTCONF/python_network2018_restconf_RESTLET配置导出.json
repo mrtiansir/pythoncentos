@@ -1,0 +1,921 @@
+{
+  "front-version": "2.19.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc5789",
+        "name": "PATCH"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"primary\":{\n\"address\": \"10.1.7.1\",\n\"mask\": \"255.255.255.0\"\n}\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet=2/ip/address/primary"
+      },
+      "id": "4acf0f9a-54c8-47c0-b845-cb3d0d99375b",
+      "lastModified": "2018-09-30T15:32:08.606+08:00",
+      "name": "config_interface_ip_address",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc5789",
+        "name": "PATCH"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"ospf\":{\n  \"id\": \"1\",\n  \"network\": {\n    \"ip\" : \"1.1.1.0\",\n    \"mask\": \"0.0.0.255\",\n    \"area\": \"0\"\n  }\n}\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-native:native/router/ospf/"
+      },
+      "id": "763ab2d9-c0f0-4e2f-83cf-fed18064bc08",
+      "lastModified": "2018-09-30T15:31:39.593+08:00",
+      "name": "config_ospf_network",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc5789",
+        "name": "PATCH"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"ospf\":{\n  \"id\": \"1\",\n  \"router-id\": \"1.1.1.1\"\n}\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-native:native/router/ospf/"
+      },
+      "id": "30ba61a9-209b-4b2c-9e59-e2207dea60d4",
+      "lastModified": "2018-09-30T15:31:20.312+08:00",
+      "name": "config_ospf_process_id",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\n   \"Loopback\": [\n\n     {\n\n       \"name\": \"0\", \n\n       \"description\": \"This is a Loopback interace\"\n\n     }\n\n   ]\n\n}\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-native:native/interface/"
+      },
+      "id": "68a480ce-9df2-4fec-a2ac-9b42e4b99189",
+      "lastModified": "2018-09-30T15:32:34.793+08:00",
+      "name": "create_Loopback0",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\n   \"Port-channel\": [\n\n     {\n\n       \"name\": \"1\", \n\n       \"description\": \"This is a port-channel interace\",\n\n       \"delay\": 22222, \n\n       \"load-interval\": 30, \n\n       \"mtu\": 1501\n\n     }\n\n   ]\n\n}\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-native:native/interface/"
+      },
+      "id": "28f4952f-c5bb-460d-ba29-dd93baf9863e",
+      "lastModified": "2018-09-30T15:32:59.414+08:00",
+      "name": "create_port_channel1",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+        "name": "DELETE"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>\n    <Link rel='restconf' href='/restconf'/>\n</XRD>\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-native:native/interface/Loopback=0"
+      },
+      "id": "75048150-573e-4a24-8c0a-4d8fd943aaa4",
+      "lastModified": "2018-09-14T18:05:52.741+08:00",
+      "name": "del_Loopback0",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+        "name": "DELETE"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>\n    <Link rel='restconf' href='/restconf'/>\n</XRD>\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-native:native/interface/Port-channel=1"
+      },
+      "id": "4121f931-7cd6-48df-a0ad-8a1eb3b1a380",
+      "lastModified": "2018-09-14T18:05:52.749+08:00",
+      "name": "del_port_channel1",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>\n    <Link rel='restconf' href='/restconf'/>\n</XRD>\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "content",
+              "value": "config"
+            }
+          ]
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-native:native"
+      },
+      "id": "8f239736-0887-4b9d-bfa8-b10dda3d03cc",
+      "lastModified": "2018-09-14T18:05:52.755+08:00",
+      "name": "get_config",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-process-cpu-oper:cpu-usage/cpu-utilization/five-seconds"
+      },
+      "id": "8bd937bd-c349-4901-9851-177cd445055f",
+      "lastModified": "2018-09-14T18:05:52.760+08:00",
+      "name": "get_cpu_usage_five_min",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>\n    <Link rel='restconf' href='/restconf'/>\n</XRD>\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet=1"
+      },
+      "id": "e9dcafc3-54c2-4ad9-8b3a-21e418b65a39",
+      "lastModified": "2018-09-14T18:05:52.766+08:00",
+      "name": "get_interface_g1",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>\n    <Link rel='restconf' href='/restconf'/>\n</XRD>\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet"
+      },
+      "id": "3af90f37-5ff8-4f87-9f6f-0c4bd3be652a",
+      "lastModified": "2018-09-14T18:05:52.775+08:00",
+      "name": "get_interfaces_config",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>\n    <Link rel='restconf' href='/restconf'/>\n</XRD>\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/ietf-routing:routing/routing-instance"
+      },
+      "id": "e8ab065f-2805-4c04-9454-d6b9842941de",
+      "lastModified": "2018-09-14T18:05:52.780+08:00",
+      "name": "get_ip_route",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>\n    <Link rel='restconf' href='/restconf'/>\n</XRD>\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/Cisco-IOS-XE-native:native/version"
+      },
+      "id": "c9b43170-ae08-4d2b-afe7-7a606f9b308c",
+      "lastModified": "2018-09-14T18:05:52.785+08:00",
+      "name": "get_version",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>\n    <Link rel='restconf' href='/restconf'/>\n</XRD>\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": ";",
+          "items": [
+            {
+              "enabled": true,
+              "name": "fields",
+              "value": "ietf-yang-library:modules-state/module(name"
+            },
+            {
+              "enabled": true,
+              "name": "revision",
+              "value": ""
+            },
+            {
+              "enabled": true,
+              "name": "schema",
+              "value": ""
+            },
+            {
+              "enabled": true,
+              "name": "namespace)",
+              "value": ""
+            }
+          ]
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data"
+      },
+      "id": "6a757ca1-e11b-40b5-ab04-41dfbd2d7a4c",
+      "lastModified": "2018-09-14T18:05:52.810+08:00",
+      "name": "get_yang_modules_state",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>\n    <Link rel='restconf' href='/restconf'/>\n</XRD>\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/ietf-yang-library:modules-state/module"
+      },
+      "id": "f5c07615-381d-4c53-8786-a5fb4aa0cc36",
+      "lastModified": "2018-09-14T18:05:52.816+08:00",
+      "name": "get_yang_modules_state_no_filter",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>\n    <Link rel='restconf' href='/restconf'/>\n</XRD>\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/.well-known/host-meta"
+      },
+      "id": "6e6d8512-4495-4df8-9528-abaeeaee70f6",
+      "lastModified": "2018-09-14T18:05:52.821+08:00",
+      "name": "host_meta",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc5789",
+        "name": "PATCH"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"interface\":{\n\"name\": \"GigabitEthernet3\",\n\"enabled\": \"true\"\n}\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/ietf-interfaces:interfaces/interface"
+      },
+      "id": "cce31e6c-9ad6-4a23-b9d4-bded485cb708",
+      "lastModified": "2018-09-30T15:33:37.451+08:00",
+      "name": "no_shutdown_if",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "\n"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.1.1.253",
+        "path": "/restconf/data/cisco-ia:save-config/"
+      },
+      "id": "aed63457-01df-4424-988f-47d3b81a7aae",
+      "lastModified": "2018-09-14T18:05:52.834+08:00",
+      "name": "save_config",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Authorization",
+          "value": "Basic YWRtaW46Q2lzYzAxMjM="
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/yang-data+json"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/yang-data+json"
+        }
+      ],
+      "metaInfo": {}
+    }
+  ]
+}
