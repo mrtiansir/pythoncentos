@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # _*_ coding=utf-8 _*_
 # python basic scripts
-import winreg
+# import winreg   #如果在Windows上运行，需要导入此模块
 import netifaces
 import platform
 
@@ -43,6 +43,6 @@ def get_ifname(ifname):
 if __name__ == '__main__':
     # iface_guids = netifaces.interfaces()
     # print(get_ifname_frome_reg(iface_guids))
-    print(get_ifname('pc'))
+    print(get_ifname('ens160'))
 
     
