@@ -41,4 +41,4 @@ def get_ifname(ifname):
 
 if __name__ == "__main__":
     # print(ni.interfaces())
-    print(get_ifname("Net1"))
+    print(get_ifname("pc"))

@@ -6,6 +6,7 @@
         <entryData>
           <resourceRoots>
             <path value="file://$PROJECT_DIR$/python-basic/Charpter16_Python_process_thread" />
+            <path value="file://$PROJECT_DIR$/my_python_classic_protocol" />
           </resourceRoots>
         </entryData>
       </entry>
